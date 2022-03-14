@@ -50,7 +50,7 @@ function switchSources() {
 
   let value = document.querySelector('select').value.toLowerCase();
 
-  if (typeof modes[value] !== undefined) {
+  if (typeof modes[value] !== "undefined") {
     editor.setOption('mode', modes[value]);
   }
 
