@@ -14,10 +14,13 @@
 ## Run
 
 ```bash
+# Set proxy
 npm config set proxy http://proxy_host:port
 npm config set https-proxy https://proxy_host:port
+
+# Run client
+# http://127.0.0.1:4000
 npm install
-npm run prepare
 npm run start
 ```
 
