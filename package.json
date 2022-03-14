@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "dev": "rimraf dist && webpack --watch",
+    "prepare": "rimraf dist && webpack",
+    "start": "npm run prepare && node server.js"
+  },
+  "dependencies": {
+    "codemirror": "^5.47.0",
+    "lsp-editor-adapter": "^0.0.10",
+    "rimraf": "^2.6.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/webpack": "^4.4.32",
+    "concurrently": "^4.1.0",
+    "css-loader": "^2.1.1",
+    "express": "^4.17.1",
+    "rimraf": "^2.6.3",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.2"
+  }
+}
