@@ -10,7 +10,7 @@
 
 ## Introduction
 
-*codemirror* is the codemirrorsocket client of [lspserver](https://github.com/lspserver) written in JavaScript.
+*codemirror* is the client of [lspserver](https://github.com/lspserver) written in JavaScript.
 
 
 
