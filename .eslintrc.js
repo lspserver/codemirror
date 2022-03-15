@@ -11,11 +11,7 @@ module.exports = {
         "ecmaVersion": 13,
         "sourceType": "module"
     },
-    "plugins": [
-        "vue"
-    ],
     "rules": {
-        "no-undef": "off",
-        "vue/no-multiple-template-root": "off"
+        "no-undef": "off"
     }
 };
