@@ -7,7 +7,7 @@
   "scripts": {
     "coverage": "mkdir coverage && nyc report --reporter=json -t coverage --report-dir=coverage",
     "dev": "rimraf dist && webpack --watch",
-    "lint": "eslint --ext .js,.vue ./",
+    "lint": "eslint --ext .js ./",
     "prepare": "rimraf dist && webpack",
     "start": "yarn run prepare && node app.js",
     "test": "nyc mocha"
