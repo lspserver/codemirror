@@ -5,12 +5,12 @@
   "productName": "lspserver",
   "license": "Apache-2.0",
   "scripts": {
+    "coverage": "mkdir coverage && nyc report --reporter=json -t coverage --report-dir=coverage",
     "dev": "rimraf dist && webpack --watch",
+    "lint": "eslint --ext .js,.vue ./",
     "prepare": "rimraf dist && webpack",
     "start": "yarn run prepare && node app.js",
-    "lint": "eslint --ext .js,.vue ./",
-    "test": "nyc mocha",
-    "coverage": "mkdir coverage && nyc report --reporter=json -t coverage --report-dir=coverage"
+    "test": "nyc mocha"
   },
   "dependencies": {
     "codemirror": "^5.47.0",
