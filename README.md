@@ -18,8 +18,8 @@
 
 ```bash
 # Set proxy
-npm config set proxy http://proxy_host:port
-npm config set https-proxy https://proxy_host:port
+yarn config set proxy http://proxy_host:port
+yarn config set https-proxy https://proxy_host:port
 
 # Run client
 # http://127.0.0.1:4000
