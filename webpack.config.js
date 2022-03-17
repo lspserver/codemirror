@@ -20,6 +20,9 @@ module.exports = {
     extensions: [ '.js' ]
   },
   target: 'web',
+  node: {
+    net: 'mock',
+  },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
