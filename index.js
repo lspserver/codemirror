@@ -2,10 +2,6 @@ import CodeMirror from 'codemirror';
 import 'codemirror/addon/hint/show-hint';
 import 'codemirror/addon/hint/show-hint.css';
 import 'codemirror/lib/codemirror.css';
-import 'codemirror/mode/css/css';
-import 'codemirror/mode/go/go';
-import 'codemirror/mode/htmlmixed/htmlmixed';
-import 'codemirror/mode/javascript/javascript';
 import 'codemirror/mode/python/python';
 import 'codemirror/theme/idea.css';
 
@@ -15,15 +11,11 @@ import { LspWsConnection, CodeMirrorAdapter } from 'lsp-editor-adapter';
 let sample = '';
 
 let modes = {
-  javascript: 'javascript',
-  html: 'htmlmixed',
-  css: 'css',
+  python: 'python',
 };
 
 let documents = {
-  javascript: 'file.js',
-  html: 'file.html',
-  css: 'file.css',
+  python: 'file.py',
 };
 
 let editor = CodeMirror(document.querySelector('.editor'), {

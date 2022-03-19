@@ -51,4 +51,5 @@ Project License can be found [here](LICENSE).
 ## Reference
 
 - [codemirror-lsp-example](https://github.com/wylieconlon/codemirror-lsp-example)
+- [codemirror-mode](https://github.com/codemirror/CodeMirror/tree/master/mode)
 - [lsp-editor-adapter-example](https://github.com/wylieconlon/lsp-editor-adapter/tree/master/example)
