@@ -49,12 +49,12 @@ function switchSources() {
   editor.setValue('');
 
   connection = new LspWsConnection({
-    serverUri: 'ws://127.0.0.1:49093/' + value,
+    serverUri: `ws://${location.hostname}:49093/` + value,
     languageId: value,
     rootUri: 'file:///usr/src/app/sources',
     documentUri: 'file:///usr/src/app/sources/' + documents[value],
     documentText: () => editor.getValue(),
-  }).connect(new WebSocket('ws://127.0.0.1:49093/' + value));
+  }).connect(new WebSocket(`ws://${location.hostname}:49093/` + value));
 
   adapter = new CodeMirrorAdapter(connection, {
     quickSuggestionsDelay: 10,
