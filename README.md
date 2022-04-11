@@ -24,7 +24,6 @@ yarn config set https-proxy https://proxy_host:port
 # Run client
 git clone https://github.com/lspserver/codemirror.git
 cd codemirror
-export NODE_OPTIONS=--openssl-legacy-provider
 yarn && yarn run start
 ```
 
