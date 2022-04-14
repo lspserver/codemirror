@@ -22,6 +22,7 @@ yarn config set proxy http://proxy_host:port
 yarn config set https-proxy https://proxy_host:port
 
 # Run client
+# Set 'export NODE_OPTIONS=--openssl-legacy-provider' if Node.js version 17+
 git clone https://github.com/lspserver/codemirror.git
 cd codemirror
 yarn && yarn run start
