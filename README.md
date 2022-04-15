@@ -36,7 +36,7 @@ yarn && yarn run start
 git clone https://github.com/lspserver/codemirror.git
 
 cd codemirror
-docker build --no-cache -f Dockerfile -t ghcr.io/lspserver/codemirror:latest .
+docker build -f Dockerfile -t ghcr.io/lspserver/codemirror:latest .
 docker run --rm -p 4000:4000 ghcr.io/lspserver/codemirror:latest
 ```
 
